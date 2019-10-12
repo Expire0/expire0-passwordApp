@@ -1,0 +1,6 @@
+setuptools
+wheel
+mysql-connector
+pysqlcipher3
+Cython
+cython-setuptools

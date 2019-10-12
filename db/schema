@@ -1,0 +1,12 @@
+CREATE TABLE `login` (
+  `ID` integer NOT NULL PRIMARY KEY AUTOINCREMENT
+,  `vendor` varchar(25) NOT NULL DEFAULT ''
+,  `Login` varchar(30) NOT NULL DEFAULT ''
+,  `Pwd` varchar(100) NOT NULL DEFAULT ''
+,  `Website` varchar(50) NOT NULL DEFAULT ''
+,  `Comments` varchar(100) NOT NULL DEFAULT ''
+,  UNIQUE (`ID`,`vendor`)
+,  UNIQUE (`ID`)
+);
+CREATE INDEX "idx_login_vendor" ON "login" (`vendor`,`Comments`);
+
