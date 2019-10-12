@@ -5,7 +5,7 @@ Fedora/RedHat/Centos
 #required		 
 yum install openssl-devel curl-devel tcl-1:8.6.8-2.fc29.x86_64 sqlite-devel  
 
-#required to access the db and run the code\   	
+#required to access the db and run the code.    	
    #section 1  	
 git clone https://github.com/Expire0/expire0-passwordApp    	
 virtualenv -p /usr/bin/python3 expire0-passwordApp    	
