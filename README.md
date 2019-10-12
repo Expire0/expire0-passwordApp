@@ -5,11 +5,11 @@ Fedora/RedHat/Centos
 #required		 
 yum install openssl-devel curl-devel tcl-1:8.6.8-2.fc29.x86_64 sqlite-devel
 
-#required to access the db and run the code	
+#required to access the db and run the code  	
    #section 1	
-git clone https://github.com/Expire0/expire0-passwordApp	
-virtualenv -p /usr/bin/python3 expire0-passwordApp	
-cd into expire0-passwordApp && source bin/activate	
+git clone https://github.com/Expire0/expire0-passwordApp  	
+virtualenv -p /usr/bin/python3 expire0-passwordApp  	
+cd into expire0-passwordApp && source bin/activate  	
    #section 2	
    #note: Sqlcipher is included in the package. It has been pre-compiled. So you	 
           may only need to run make and make install. If that fails, then 
