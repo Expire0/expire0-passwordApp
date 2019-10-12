@@ -17,21 +17,31 @@ cd into expire0-passwordApp && source bin/activate
 
    #section 2	
    
-   #note: Sqlcipher is included in the package. It has been pre-compiled. So you	 
+   #note: Sqlcipher is included in the package. It has been pre-compiled. So you
+   
           may only need to run make and make install. If that fails, then 
+	  
           run the configure , make and make install commands. 
+	  
 git clone https://github.com/sqlcipher/sqlcipher.git	
+
 cd into sqlcipher/	
+
 ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" LDFLAGS="/opt/local/lib/libcrypto.a"	
 
 make	
+
 make install	
 
+
    #section 3	
+   
 pip3 install -r requirements.txt	
+
 export LD_LIBRARY_PATH=./sqlcipher/.libs/	
 
 #run the application 
+
 ./getpass.py	
 
 
