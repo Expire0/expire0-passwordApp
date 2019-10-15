@@ -99,8 +99,9 @@ def backup():
         outs, err = complete.communicate
         return err.decode("utf-8")
 
-    
-
+ # please use this __name__ variable whenever you create a module it is helpfull while testing the module. 
+if __name__ == '__main__':
+   print("This script is not working as a module right now")
 
 
 
