@@ -1,10 +1,13 @@
 # expire0-passwordApp
 Password manager application.		 
-Fedora/RedHat/Centos		
+Fedora/RedHat/Centos/ untested Ubuntu		
 	
 ## Requirements:		 
 ```
 $ yum install openssl-devel curl-devel tcl-1:8.6.8-2.fc29.x86_64 sqlite-devel
+```
+```
+$ apt-get install tcl libssl-dev libcurl4-dev libsqlite3-dev libcurl4-openssl-dev
 ```
 required to access the db and run the code   
 
