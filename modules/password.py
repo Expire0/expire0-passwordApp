@@ -8,12 +8,12 @@ char_set = {'small': 'abcdefghijklmnopqrstuvwxyz',
             }
 
 
-def generate_pass(length=21):
+def generate_pass(pwdlen):
     """Function to generate a password"""
 
     password = []
 
-    while len(password) < length:
+    while len(password) < pwdlen:
         key = choice([char_set["small"],char_set["big"],char_set["special"],char_set["nums"]])
         a_char = urandom(1)
         n = choice(key)

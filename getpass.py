@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 
-from modules import config,classm
+#from modules import config,classm
+from modules import password
+from sys import argv
 
+script, pwdlen = argv
+
+newpass = password.generate_pass(int(pwdlen))
+print(f"Your new password is {newpass}")
 
 print("""
       Expire0 Pytool .Select a option below
