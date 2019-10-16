@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#from modules import config,classm
+from modules import config,classm
 from modules import password
 from sys import argv
 
