@@ -16,7 +16,7 @@ required to access the db and run the code
 ```
 $ git clone https://github.com/Expire0/expire0-passwordApp  
 $ virtualenv -p /usr/bin/python3 expire0-passwordApp    
-$ cd into expire0-passwordApp && source bin/activate   
+$ cd expire0-passwordApp && source bin/activate   
 ```
 
 ## Section 2:
@@ -27,7 +27,7 @@ $ cd into expire0-passwordApp && source bin/activate
 
 ```
 $ git clone https://github.com/sqlcipher/sqlcipher.git	
-$ cd into sqlcipher/	
+$ cd sqlcipher/	
 $ ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" LDFLAGS="/opt/local/lib/libcrypto.a"	
 ```
 ```
