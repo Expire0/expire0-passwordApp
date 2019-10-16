@@ -28,19 +28,18 @@ selection1 = int(selection)
 if selection1 <= 7:
     if selection1 == 1:
         classm.exconnect()
-    if selection1 == 2:
+    elif selection1 == 2:
         classm.inconnect()
-    if selection1 == 3:
+    elif selection1 == 3:
         classm.delconnect()
-    if selection1 == 4:
+    elif selection1 == 4:
         print(classm.backup())
-    if selection1 == 5:
+    elif selection1 == 5:
         classm.mod()
-    if selection1 == 6:
+    elif selection1 == 6:
         genpwd()    
-    if selection1 == 7:
+    elif selection1 == 7:
         exit()
-
 else:
     print("Please select a valid option:")
 
