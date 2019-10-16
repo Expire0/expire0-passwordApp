@@ -6,23 +6,26 @@ from sys import argv
 
 script, pwdlen = argv
 
-newpass = password.generate_pass(int(pwdlen))
-print(f"Your new password is {newpass}")
+
+def genpwd():
+    newpass = password.generate_pass(int(pwdlen))
+    print(f"Your new password is: {newpass}")
 
 print("""
-      Expire0 Pytool .Select a option below:
+      Expire0 Pytool. Select an option below:
       1. Login lookup
       2. Insert new entry 
-      3. Delete a entry
-      4. Backup data to a sql file 
-      5. Modify a entry
-      6. Exit
+      3. Delete an entry
+      4. Backup data to a SQL file 
+      5. Modify an entry
+      6. Generate a random password
+      7. Exit
      """)
 
 selection = input("Select a menu option: ")
 selection1 = int(selection)
 
-if selection1 <= 6:
+if selection1 <= 7:
     if selection1 == 1:
         classm.exconnect()
     if selection1 == 2:
@@ -34,7 +37,11 @@ if selection1 <= 6:
     if selection1 == 5:
         classm.mod()
     if selection1 == 6:
+        genpwd()    
+    if selection1 == 7:
         exit()
 
 else:
-    print("Please select a valid option")
+    print("Please select a valid option:")
+
+
