@@ -4,10 +4,10 @@ from modules import config,classm
 from modules import password
 from sys import argv
 
-script, pwdlen = argv
+#script, pwdlen = argv
 
 
-def genpwd():
+def genpwd(pwdlen):
     newpass = password.generate_pass(int(pwdlen))
     print(f"Your new password is: {newpass}")
 
@@ -37,7 +37,11 @@ if selection1 <= 7:
     elif selection1 == 5:
         classm.mod()
     elif selection1 == 6:
-        genpwd()    
+        len1 = input("Enter the password length > 10: ")
+        if int(len1) < 10:
+            print("Please enter a password length greater than 10")
+        else:
+            genpwd(int(len1))    
     elif selection1 == 7:
         exit()
 else:
